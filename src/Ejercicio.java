@@ -5,10 +5,10 @@ import java.io.IOException;
 
 public class Ejercicio {
 
-	public static void main(String[] args) {
-	
+	public static void leerFichero() {
+		
 		try {
-			FileReader f = new FileReader("C:\\Users\\juan\\Desktop\\f.txt");
+			FileReader f = new FileReader("src\\fichero");
 			int c = f.read();
 			while(c != -1) {
 				
@@ -21,6 +21,12 @@ public class Ejercicio {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+	}
+	
+	public static void main(String[] args) {
+	
+		leerFichero();
 		
 	}
 }
